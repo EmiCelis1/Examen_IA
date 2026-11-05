@@ -15,7 +15,6 @@ public class Tormenta : Estado
         estadoPrevio = anterior;
         tiempo = 0f;
 
-        // Suma 1 a los incidentes en el Contexto
         int incidentesActuales = Ctx.Obtener<int>("incidentes") + 1;
         Ctx.Fijar("incidentes", incidentesActuales);
 

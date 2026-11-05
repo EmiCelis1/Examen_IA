@@ -65,7 +65,7 @@ public class Cosiendo : Estado
             int numero = Ctx.Obtener<int>("consecutivo") + 1;
             Prenda r = catalogo[id].Crear(numero);
 
-            // Guard clause 2: r es null (sin existencias)
+            // Guard clause 2
             if (r == null)
             {
                 Debug.Log("agotado");
