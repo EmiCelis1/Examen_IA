@@ -10,7 +10,7 @@ public class Cierre : Estado
 
     public override void Entrar(string anterior)
     {
-        Debug.Log("--- REPORTE FINAL DEL DIA ---");
+        Debug.Log("Reporte del dia");
 
         var vendidos = Ctx.ObtenerOCrear<Dictionary<string, int>>("vendidos");
 
@@ -37,13 +37,11 @@ public class Cierre : Estado
 
     public override string Actualizar(float dt)
     {
-        // Estado final: no cambia automaticamente
         return null;
     }
 
     public override string AlRecibir(string trigger, object valor)
     {
-        // Solo se sale con la tecla R desde el controller
         return null;
     }
 }
